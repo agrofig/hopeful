@@ -1,91 +1,19 @@
 
 [
-  {
-    "title": "Ragdoll Hit",
-    "url": "https://poki.com/en/g/ragdoll-hit"
-  },
-  {
-    "title": "Ragdoll Archers",
-    "url": "https://www.crazygames.com/game/ragdoll-archers"
-  },
-  {
-    "title": "Vex 3",
-    "url": "https://poki.com/en/g/vex-3"
-  },
-  {
-    "title": "Vex 4",
-    "url": "https://poki.com/en/g/vex-4"
-  },
-  {
-    "title": "Vex 5",
-    "url": "https://poki.com/en/g/vex-5"
-  },
-  {
-    "title": "Vex 6",
-    "url": "https://poki.com/en/g/vex-6"
-  },
-  {
-    "title": "Slope",
-    "url": "https://y8.com/embed/slope"
-  },
-  {
-    "title": "Retro Bowl",
-    "url": "https://game316009.konggames.com/gamez/0031/6009/live/index.html"
-  },
-  {
-    "title": "2048",
-    "url": "https://business.gamezop.com/html5-games/2048/NyM_JGWcx"
-  },
-  {
-    "title": "Dino Game",
-    "url": "https://dinogame.dev/embed?theme=classic&embed=true&showThemeSelector=true&autoStart=false&showInstructions=true"
-  },
-  {
-    "title": "Run 3",
-    "url": "https://www.coolmathgames.com/0-run-3"
-  },
-  {
-    "title": "Cookie Clicker",
-    "url": "https://orteil.dashnet.org/cookieclicker/"
-  },
-  {
-    "title": "Tetris",
-    "url": "https://tetris.com/play-tetris"
-  },
-  {
-    "title": "Flappy Bird",
-    "url": "https://flappybird.io/"
-  },
-  {
-    "title": "Minecraft Classic",
-    "url": "https://classic.minecraft.net/"
-  },
-  {
-    "title": "Pac-Man",
-    "url": "https://www.retrogames.cc/embed/23889-pac-man-ms-dos.html"
-  },
-  {
-    "title": "Rage Quit Royale",
-    "url": "https://your-proxy-url/embed.html?url=https://example.com/rage-quit-royale"
-  },
-  {
-    "title": "Snack Break Simulator",
-    "url": "https://your-proxy-url/embed.html?url=https://example.com/snack-break-sim"
-  },
-  {
-    "title": "Alt+F4 Adventure",
-    "url": "https://your-proxy-url/embed.html?url=https://example.com/altf4-adventure"
-  },
-  {
-    "title": "Skill Issue Showdown",
-    "url": "https://your-proxy-url/embed.html?url=https://example.com/skill-issue-showdown"
-  },
-  {
-    "title": "Boss Fight at 3AM",
-    "url": "https://your-proxy-url/embed.html?url=https://example.com/boss-fight-3am"
-  },
-  {
-    "title": "Lag Blame Arena",
-    "url": "https://your-proxy-url/embed.html?url=https://example.com/lag-blame-arena"
-  }
+  { "title": "1v1.lol", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/1v1lol/" },
+  { "title": "OvO", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/ovo/" },
+  { "title": "BitLife", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/bitlife/" },
+  { "title": "Drive Mad", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/drive-mad/" },
+  { "title": "Geometry Dash", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/geometry-dash/" },
+  { "title": "Moto X3M", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/moto-x3m/" },
+  { "title": "Slope", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/slope/" },
+  { "title": "Tunnel Rush", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/tunnel-rush/" },
+  { "title": "Smash Karts", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/smash-karts/" },
+  { "title": "Retro Bowl", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/retrobowl/" },
+  { "title": "Among Us", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/among-us/" },
+  { "title": "2048", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/2048/" },
+  { "title": "Stack", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/stack/" },
+  { "title": "Wordle", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/wordle/" },
+  { "title": "Cookie Clicker", "url": "https://wok.replit.app/proxy?url=https://ubg98.github.io/cookie-clicker/" }
 ]
+
