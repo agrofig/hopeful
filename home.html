@@ -39,27 +39,45 @@
       margin-bottom: 40px;
     }
 
-    .meme {
-      max-width: 300px;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    #copilot-widget {
+      margin-top: 40px;
     }
 
-    .caption {
+    #copilot-widget button {
+      background-color: #c4b5fd;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #copilot-widget button:hover {
+      background-color: #a78bfa;
+    }
+
+    #copilot-tips {
+      margin-top: 30px;
+      font-style: italic;
+      color: #6b7280;
       font-size: 1.2em;
-      margin-top: 10px;
     }
   </style>
 </head>
 <body>
   <h1>🌼 Cozy Game Hub</h1>
+
   <div id="game-buttons"></div>
 
-  <div class="meme-section">
-    <img src="https://i.imgflip.com/5z3v3v.jpg" class="meme" alt="funny meme">
-    <div class="caption">Me trying to beat level 1 without rage quitting 😅</div>
+  <div id="copilot-widget">
+    <a href="https://copilot.microsoft.com" target="_blank">
+      <button>💡 Ask Copilot for Help</button>
+    </a>
   </div>
+
+  <div id="copilot-tips">🧠 Copilot says: “Don’t rage quit. Just pretend you’re speedrunning frustration.”</div>
 
   <script>
     function openGame(gameUrl) {
@@ -80,7 +98,21 @@
           container.appendChild(btn);
         });
       });
+
+    // Rotating Copilot tips
+    const tips = [
+      "Don’t rage quit. Just pretend you’re speedrunning frustration.",
+      "If the game’s too hard, it’s clearly a skill issue. Or a snack issue.",
+      "Me: I’ll play one game. Also me: It’s 3am and I’m in a boss fight.",
+      "Pro tip: Alt+F4 is not a power move. It’s a cry for help.",
+      "Gaming is 10% skill, 90% blaming lag."
+    ];
+
+    let tipIndex = 0;
+    setInterval(() => {
+      document.getElementById('copilot-tips').textContent = `🧠 Copilot says: “${tips[tipIndex]}”`;
+      tipIndex = (tipIndex + 1) % tips.length;
+    }, 8000);
   </script>
 </body>
 </html>
-
