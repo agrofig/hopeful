@@ -2,19 +2,57 @@
 <html>
 <head>
   <title>Cozy Game Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .game-button {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .game-button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
   <h1>🎮 Welcome to Cozy Game Hub</h1>
-
-  <button onclick="openGame('https://ragdollhit2.github.io/')">Play Ragdoll Hit</button>
-  <button onclick="openGame('https://games.onlinegames.io/embed/drift-hunters-pro/')">Play Drift Hunters</button>
+  <div id="game-buttons"></div>
 
   <script>
     function openGame(gameUrl) {
       const encoded = encodeURIComponent(gameUrl);
-      const proxyEmbed = `https://Node-js.wok.repl.co/embed.html?url=${encoded}`; // Replace with your actual Replit URL
+      const proxyEmbed = `https://Node-js.wok.repl.co/embed.html?url=${encoded}`; // Replace with your actual Replit proxy URL
       window.open(proxyEmbed, '_blank');
     }
+
+    fetch('games.json')
+      .then(response => response.json())
+      .then(games => {
+        const container = document.getElementById('game-buttons');
+        games.forEach(game => {
+          const btn = document.createElement('button');
+          btn.textContent = `Play ${game.title}`;
+          btn.className = 'game-button';
+          btn.onclick = () => openGame(game.url);
+          container.appendChild(btn);
+        });
+      });
   </script>
 </body>
 </html>
+
