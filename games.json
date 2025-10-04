@@ -1,14 +1,28 @@
-[
-  {
-    "title": "Ragdoll Hit",
-    "url": "https://ragdollhit2.github.io/"
-  },
-  {
-    "title": "Drift Hunters",
-    "url": "https://games.onlinegames.io/embed/drift-hunters-pro/"
-  },
-  {
-    "title": "Stickman Destruction",
-    "url": "https://games.onlinegames.io/embed/stickman-destruction/"
-  }
-]
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Time</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5; /* soft pink background */
+    }
+
+    iframe {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const gameUrl = params.get("url");
+    const proxy = "https://Node-js.wok.repl.co/proxy?url=" + encodeURIComponent(gameUrl); // Replace with your actual Replit proxy URL
+    document.write(`<iframe src="${proxy}" allowfullscreen></iframe>`);
+  </script>
+</body>
+</html>
