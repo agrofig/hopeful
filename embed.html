@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Embed</title>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const gameUrl = params.get("url");
+    const proxy = "https://Node-js.wok.repl.co/proxy?url=" + encodeURIComponent(gameUrl); // Replace with your Replit proxy
+    document.write(`<iframe src="${proxy}" width="960" height="600" frameborder="0" allowfullscreen></iframe>`);
+  </script>
+</body>
+</html>
