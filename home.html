@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cozy Game Hub</title>
+</head>
+<body>
+  <h1>🎮 Welcome to Cozy Game Hub</h1>
+
+  <button onclick="openGame('https://ragdollhit2.github.io/')">Play Ragdoll Hit</button>
+  <button onclick="openGame('https://games.onlinegames.io/embed/drift-hunters-pro/')">Play Drift Hunters</button>
+
+  <script>
+    function openGame(gameUrl) {
+      const encoded = encodeURIComponent(gameUrl);
+      const proxyEmbed = `https://Node-js.wok.repl.co/embed.html?url=${encoded}`; // Replace with your actual Replit URL
+      window.open(proxyEmbed, '_blank');
+    }
+  </script>
+</body>
+</html>
