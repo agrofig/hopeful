@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Passcode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f0f0f0;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔐 Cozy Game Hub Access</h2>
+  <p>Please enter the passcode to continue:</p>
+
+  <input type="password" id="passcode" placeholder="Enter passcode">
+  <br>
+  <button onclick="checkPasscode()">Enter</button>
+  <div id="error" class="error"></div>
+
+  <script>
+    function checkPasscode() {
+      const input = document.getElementById('passcode').value;
+      const correct = "cozy123"; // 🔐 Your secret passcode
+      const errorBox = document.getElementById('error');
+
+      if (input === correct) {
+        window.location.href = "home.html"; // Redirect to your actual homepage
+      } else {
+        errorBox.textContent = "Incorrect passcode. Try again.";
+      }
+    }
+  </script>
+</body>
+</html>
