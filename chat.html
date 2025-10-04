@@ -16,6 +16,25 @@
       margin-bottom: 20px;
     }
 
+    #music-control {
+      margin-bottom: 20px;
+    }
+
+    #music-control button {
+      background-color: #c4b5fd;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #music-control button:hover {
+      background-color: #a78bfa;
+    }
+
     #chat {
       max-width: 700px;
       margin: auto;
@@ -76,6 +95,14 @@
   </style>
 </head>
 <body>
+  <div id="music-control">
+    <button onclick="toggleMusic()">🎵 Toggle Lo-Fi Vibes</button>
+    <audio id="lofiPlayer" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7b6c1b7e7c.mp3?filename=lofi-study-112191.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
   <h1>💬 Cozy Chatroom</h1>
 
   <div id="chat">
@@ -130,7 +157,6 @@
       const results = document.getElementById('imageResults');
       results.innerHTML = '';
 
-      // Simulated image results — replace with real API later
       const sampleImages = [
         'https://i.imgflip.com/5z3v3v.jpg',
         'https://i.kym-cdn.com/photos/images/newsfeed/002/586/821/3e2.jpg',
@@ -147,6 +173,15 @@
 
     function sendImageToChat(url) {
       socket.emit('chatMessage', `<img src="${url}" style="max-width:200px; border-radius:8px;">`);
+    }
+
+    function toggleMusic() {
+      const player = document.getElementById('lofiPlayer');
+      if (player.paused) {
+        player.play();
+      } else {
+        player.pause();
+      }
     }
   </script>
 </body>
